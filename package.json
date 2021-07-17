@@ -1,0 +1,51 @@
+{
+  "name": "fm-rest-countries-api-with-color-theme-switcher",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "client": "vue-cli-service serve",
+    "serve": "stack-monitor ./stack.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.6",
+    "express": "^4.17.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.2.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@iryu54/stack-monitor": "^1.7.3",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
