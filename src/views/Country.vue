@@ -104,6 +104,7 @@ export default {
       .badges {
         display: flex;
         overflow: auto;
+        padding: 10px 0;
         .badge {
           flex-shrink: 0;
         }
@@ -120,6 +121,11 @@ button, .badge {
   margin: 0 5px;
   border-radius: 4px;
   cursor: pointer;
+  transition: 300ms;
+  box-shadow: var(--shadowNavbar);
+  &:hover {
+    transform: scale(1.05);
+  }
   &.badge {
     overflow: hidden;
     white-space: nowrap;

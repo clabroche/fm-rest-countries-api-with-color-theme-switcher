@@ -39,7 +39,7 @@ export default {
   margin: 40px 0;
   flex-wrap: wrap;
   .input-container {
-    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: var(--accent);
     height: 40px;
     display: flex;
@@ -60,7 +60,7 @@ export default {
     }
   }
   select {
-    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     background-color: var(--accent);
     box-shadow: var(--shadowNavbar);

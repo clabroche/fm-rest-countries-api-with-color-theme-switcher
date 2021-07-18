@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 .navbar-root {
   width: 100%;
-  height: 50px;
+  height: 75px;
   box-shadow: var(--shadowNavbar);
   background-color: var(--bgNavbar);
   .navbar {
@@ -37,7 +37,7 @@ export default {
     height: 100%;
     .logo {
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
   }
 }
