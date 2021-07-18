@@ -41,7 +41,8 @@ export default {
   .input-container {
     margin-bottom: 10px;
     background-color: var(--accent);
-    height: 40px;
+    height: 60px;
+    min-width: 400px;
     display: flex;
     align-items: center;
     box-shadow: var(--shadowNavbar);
@@ -67,7 +68,7 @@ export default {
     color: var(--accent-color);
     width: 150px;
     padding: 0 10px;
-    height: 40px;
+    height: 60px;
 
   }
 }
