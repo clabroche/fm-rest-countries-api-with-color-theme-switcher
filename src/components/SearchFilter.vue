@@ -37,8 +37,9 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
-
+  flex-wrap: wrap;
   .input-container {
+    margin-top: 10px;
     background-color: var(--accent);
     height: 40px;
     display: flex;
@@ -59,12 +60,15 @@ export default {
     }
   }
   select {
+    margin-top: 10px;
     border: none;
     background-color: var(--accent);
     box-shadow: var(--shadowNavbar);
     color: var(--accent-color);
     width: 150px;
     padding: 0 10px;
+    height: 40px;
+
   }
 }
 </style>

@@ -21,10 +21,12 @@
             <span class="info"><div class="label">Languages:</div> {{country.languages.map(l => l.name).join(', ')}}</span>
           </div>
         </div>
-        <span class="info">
+        <span class="info borders">
           <div class="label">Borders:</div>
-          <div class="badge" v-for="border of borders" :key="border" @click="$router.push({name: 'country', params: {countryName: border}})">
-            {{border}}
+          <div class="badges">
+            <div class="badge" v-for="border of borders" :key="border" @click="$router.push({name: 'country', params: {countryName: border}})">
+              {{border}}
+            </div>
           </div>
         </span>
       </div>
@@ -74,6 +76,7 @@ export default {
 
   .infos {
     padding: 0 20px;
+    overflow: auto;
     h2 {
       font-weight: bold;
       font-size: 1.1em;
@@ -97,6 +100,15 @@ export default {
         margin-right: 100px;
       }
     }
+    .borders {
+      .badges {
+        display: flex;
+        overflow: auto;
+        .badge {
+          flex-shrink: 0;
+        }
+      }
+    }
   }
   }
 }
@@ -115,6 +127,36 @@ button, .badge {
     max-width: 50px;
   }
   &:hover {
+  }
+}
+@media screen and (max-width: 800px) {
+  .country-root {
+    .container {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      .infos {
+        h2 {
+          margin-top: 40px;
+        }
+        .left-right {
+          flex-direction: column;
+          .left,.right {
+            margin-bottom: 20px;
+          }
+        }
+        .borders {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          .badges {
+            margin-top: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 </style>
