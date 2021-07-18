@@ -1,4 +1,20 @@
-:root{
-  a: #1f3756;
-  b: #141539;
+// root/default variables
+:root {
+    --bg: #eee;
+    --color: black;
+    --accent: white;
+    --accent-color: #555;
+    --bgNavbar: #eee;
+    --shadowNavbar: 0 0 10px 0 #ccc;
+    --shadowNavbarAccent: 0 0 10px 0 #ccc;
+}
+//dark theme
+[data-theme="dark"] {
+    --bg: #212e37;
+    --color: white;
+    --accent: #2b3743;
+    --accent-color: #ccc;
+    --bgNavbar: #2b3743;
+    --shadowNavbar: 0 0 10px 0 #222;
+    --shadowNavbarAccent: 0 0 20px 0 #000;
 }
